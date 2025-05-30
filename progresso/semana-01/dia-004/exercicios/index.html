@@ -20,8 +20,10 @@
     <script>
         let n1 = Number(window.prompt('Qual o número?'))
         document.write(`Com duas casas decimais: ${n1.toFixed(2)}<br>`)
-        document.write(`Com vírgula: ${n1.toFixed(2).replace('.', ',')}<br>15`)
-        document.write(`Dinheiro: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+        document.write(`Com vírgula: ${n1.toFixed(2).replace('.', ',')}<br>`)
+        document.write(`Dinheiro: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>`)
+        document.write(`Dinheiro: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}<br>`)
+        document.write(`Dinheiro: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}`)
     </script>
 </body>
 </html>
