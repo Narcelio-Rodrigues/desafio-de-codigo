@@ -25,10 +25,12 @@
         - `true || false` → `true`, `false || false` → `false`
 
 - Operadores ternário
+    - `teste` ? `true` : `false`
+    _Exemplo:_ media >= 7.0 ? "Aprovado" : "Reprovado"
 
 - Precedência
    **1** - () ** / ...
-   **2** - > < >= ...
+   **2** - > < >= ... (Não tem ordem)
    **3** - !
    **4** - &&
    **5** - ||
