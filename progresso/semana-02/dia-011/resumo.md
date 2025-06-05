@@ -29,3 +29,22 @@ location  document  history
   - por Seletor
       querySelector()
       querySelectorAll()
+
+
+# Aula 10 – Eventos DOM
+
+## 📌 Tópicos abordados
+
+- Eventos DOM
+  - mouseenter
+  - mousemove
+  - mousedown
+  - mouseup
+  - click
+  - mouseout
+
+- Funções
+
+  function ação(param){
+    bloco
+  }
