@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Nacionalidade</title>
+</head>
+
+<body>
+    <div>
+        <h1>Sistema de Nacionalidade</h1>
+        Qual país: <input type="text" name="txt" id="txtvel">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res"></div>
+    </div>
+    
+
+    <script>
+        function verificar() {
+            let Qpais = window.document.querySelector('#txtvel')
+            let res = window.document.querySelector('#res')
+            let pais = Qpais.value.trim().toLowerCase()
+            
+            res.innerHTML = `<p>Vivendo em ${Qpais.value}</p>`
+
+            if ( pais == 'brasil') {
+                res.innerHTML += `<p>Você é Brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
