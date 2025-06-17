@@ -2,7 +2,8 @@
 
 ## 📌 Tópicos abordados
 - Repetições
-
+Primeiro testa depois executa o bloco
+Estrutura de repetição com teste lógico no início.
 while (condição) {
 
 }
