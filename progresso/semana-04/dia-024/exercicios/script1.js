@@ -11,10 +11,11 @@ for(let d = 1; d <= 10; d++) {
 }
 
 for(let c = 1; c <= 10; c++) {
+    console.log(`TABUADA DO ${c}`)
     for(let a = 2; a <= 9; a++) {
         let res = c * a
         console.log(`${c} x ${a} = ${res}`)
     }
-    console.log('--------')
+    console.log('-----------')
 }
 console.log('FIM!')
