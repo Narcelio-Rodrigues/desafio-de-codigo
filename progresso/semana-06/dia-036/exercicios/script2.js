@@ -52,7 +52,7 @@ let escolha;
 let historico = []
 
 do {
-   escolha = window.prompt('Escolha:\n 1 - Soma\n 2 - Divisão\n 3 - Multiplicação\n 4 - Subtração\n 5 - Sair')
+   escolha = window.prompt('Escolha:\n 1 - Soma\n 2 - Divisão\n 3 - Multiplicação\n 4 - Subtração\n 5 - Apagar histórico\n 6 - Ver histórico\n 7 - Sair')
 
    switch (escolha) {
       case '1': {
@@ -75,13 +75,24 @@ do {
          subtrair(a, b, historico)
          break
       }
-      case '5':
+
+      case '5': {
+         historico.length = 0
+         window.alert('🗑️ Histórico apagado com sucesso!')
+         break
+      }
+
+      case '6': {
          if (historico.length > 0) {
             let mensagem = '📜 Histórico de Operações:\n\n' + historico.join('\n')
             window.alert(mensagem)
          } else {
             window.alert('Nenhuma operação foi realizada.')
          }
+         break
+      }
+
+      case '7':
          window.alert('Saindo...')
          break
    
@@ -89,5 +100,5 @@ do {
          window.alert('Opção inválida!')
          break
    }
-} while (escolha !== '5')
+} while (escolha !== '7')
 
