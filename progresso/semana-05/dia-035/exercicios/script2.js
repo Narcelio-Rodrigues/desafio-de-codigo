@@ -10,7 +10,7 @@ function somar(a, b) {
 
 function dividir(a, b) {
    if(b == 0) {
-      window.alert('Erro: divisão por zero!')
+      window.alert('Erro: não é possível dividir por zero!')
    } else {
       window.alert(`${a} / ${b} = ${a / b}`)
    }
