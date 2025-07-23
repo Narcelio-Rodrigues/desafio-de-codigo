@@ -16,16 +16,20 @@ IMC em adultos. Condição:
 
 let peso = 55
 let altura = 159
+let classificacao;
 let IMC = peso / (altura * altura)
 
+
 if (IMC < 18.5) {
-    console.log('Abaixo do peso')
+    classificacao = 'Abaixo do peso'
 } else if (IMC > 18.5 && IMC < 25) {
-    console.log('Peso normal')
+    classificacao = 'Peso normal'
 } else if (IMC > 25 && IMC < 30) {
-    console.log('Acima do peso')
+    classificacao = 'Acima do peso'
 } else if (IMC > 30 && IMC < 40) {
-    console.log('Obeso')
+    classificacao = 'Obeso'
 } else {
-    console.log('Obesidade Grave')
+    classificacao = 'Obesidade Grave'
 }
+
+console.log(`O valor do IMC é ${IMC}. Classificado como ${classificacao}`)
