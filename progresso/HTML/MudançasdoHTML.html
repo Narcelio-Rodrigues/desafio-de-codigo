@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTMl 5 - Estrutural</title>
+    <style>
+        nav ul { 
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li a{ 
+            padding: 10px 15px;
+            color: blue;
+            text-decoration: none;
+            border-radius: 15px 0;
+        }
+        nav ul li a:hover{ 
+            color: white;
+            background: blue;
+        }
+
+        article time {
+            font-style: italic;
+        }
+
+        article q {
+            font-style: italic;
+        }
+
+        blockquote {
+            background: #f5f5f5;
+            padding: 15px;
+            margin-left: 0px;
+            border-left: rgb(34, 0, 255) solid 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Descoberta de vida em outro planeta</h1>
+            <p>Artigo publicado em <time pubdate>21/01/2022 19:00</time></p>
+            <p>Segundo alunos e alunas da DIO.me, <q cite="http://dio.me">Este é o melhor curso de HTML que já fizeram</q></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis.</p>
+            <blockquote cite="http://wikipedia.com">
+                <p>Estrela Marta é referente a uma estrela</p>
+            </blockquote>
+        </article>
+
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg/330px-Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg" alt="carro">
+            <figcaption>Descrição do veículo</figcaption>
+        </figure>
+        
+        <picture>
+            <source srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg/330px-Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg" media="(min-width: 600px)">
+            <img src="https://blog.autocompara.com.br/wp-content/uploads/2024/06/carros-esportivos.jpeg">
+        </picture>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
