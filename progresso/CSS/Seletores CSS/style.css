@@ -6,6 +6,9 @@ SELETORES: definem em quais elementos nós vamos aplicar o CSS
     4. Seletor de Universal
     5. Seletor de atributo
 */
+* {
+    font-weight: bold;
+}
 
 h1 {
     background: darkblue;
@@ -27,6 +30,43 @@ li {
 }
 
 .seletores-mais-comuns {
-    background: black;
-    color:white;
+    color: rgb(219, 17, 17);
+}
+
+.texto-maiusculo {
+    text-transform: uppercase;
+}
+
+[title] {
+    color: rgb(211, 17, 255);
+}
+
+[title="atributo-valor"] {
+    color: rgb(0, 0, 0);
+}
+
+[title~="gato"] {
+    background: rgb(0, 0, 0);
+}
+
+[title|="cobra"] {
+    background: rgb(198, 195, 27);
+}
+
+/* Prefixo */
+[href^="http://"] {
+    background: blue;
+    color: white;
+}
+
+/* Sufixo */
+[href$="login"] {
+    background: rgb(255, 0, 251);
+    color: white;
+}
+
+/* Procurar uma palavra independente da posição */
+[href*="login"] {
+    background: rgb(255, 0, 0);
+    color: white;
 }
