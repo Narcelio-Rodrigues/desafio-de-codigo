@@ -1,3 +1,7 @@
+#agrupamento-de-seletores {
+    background: whitesmoke;
+}
+
 /* 
 SELETORES: definem em quais elementos nós vamos aplicar o CSS
     1. Seletor de Tag/Tipo
@@ -6,10 +10,13 @@ SELETORES: definem em quais elementos nós vamos aplicar o CSS
     4. Seletor de Universal
     5. Seletor de atributo
 */
+
+/* Seletor de Universal */
 * {
     font-weight: bold;
 }
 
+/* Seletor de Tag/Tipo */
 h1 {
     background: darkblue;
     color: lightgreen;
@@ -24,11 +31,13 @@ li {
     background: lightgreen;
 }
 
+/* Seletor de Id */
 #texto-boas-vindas {
     background: red;
     color: white;
 }
 
+/* Seletor de Classes */
 .seletores-mais-comuns {
     color: rgb(219, 17, 17);
 }
@@ -37,36 +46,45 @@ li {
     text-transform: uppercase;
 }
 
+/* Seletor de atributo */
 [title] {
     color: rgb(211, 17, 255);
 }
 
+/* Seletor de atributo - aplicando pelo valor específico do atributo */
 [title="atributo-valor"] {
     color: rgb(0, 0, 0);
 }
 
+/* Seletor de atributo - aplicando pelo valor exato ou valor separado por espaço */
 [title~="gato"] {
     background: rgb(0, 0, 0);
 }
 
+/* Seletor de atributo - aplicando pelo valor exato ou valor seguido por um hífen*/
 [title|="cobra"] {
     background: rgb(198, 195, 27);
 }
 
-/* Prefixo */
+/* Seletor de atributo - aplicando pelo Prefixo*/
 [href^="http://"] {
     background: blue;
     color: white;
 }
 
-/* Sufixo */
+/* Seletor de atributo - aplicando pelo Sufixo*/
 [href$="login"] {
     background: rgb(255, 0, 251);
     color: white;
 }
 
-/* Procurar uma palavra independente da posição */
+/* Seletor de atributo - Aplicando em valor independente da posição*/
 [href*="login"] {
     background: rgb(255, 0, 0);
     color: white;
+}
+
+/* Agrupamento de Seletores */
+h2, #paragrafo, #explicacao-seletores-assim { 
+    color: rgb(255, 0, 251);
 }
