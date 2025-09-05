@@ -1,0 +1,9 @@
+/* 
+    Combinadores: qual tipo de relação entre 2 seletores.
+    1. Combinador descendente (espaço)
+    2. Combinador filho (>)
+    3. Combinador irmão adjacente (+)
+    4. Combinador irmão em geral (~)
+
+    [SELETOR] [COMBINADOR] [SELETOR]
+*/
