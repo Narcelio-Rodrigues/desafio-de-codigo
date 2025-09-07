@@ -7,3 +7,24 @@
 
     [SELETOR] [COMBINADOR] [SELETOR]
 */
+
+li {
+    color: red;
+}
+
+/* Combinador descendente (espaço) */
+li li {
+    color: green;
+}
+
+#lista-01 li {
+    background: lightblue;
+}
+
+.fundo-verde li {
+    background: lightgreen;
+}
+
+.fundo-azul li {
+    background: lightblue;
+}
