@@ -28,3 +28,7 @@ li li {
 .fundo-azul li {
     background: lightblue;
 }
+
+.fundo-verde #sublista-01 li {
+    color: black;
+}
