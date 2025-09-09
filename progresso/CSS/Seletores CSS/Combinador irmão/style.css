@@ -9,3 +9,24 @@
 */
 
 /* Combinador irmão adjacente (+) */
+div + p {
+    background: rgb(252, 105, 0);
+}
+div + p + p {
+    background: lawngreen;
+}
+
+p + p {
+    font-weight: bolder;
+    color: rgb(60, 0, 255);
+}
+
+.fundo-verde + p {
+    background: rgb(202, 50, 205);
+}
+
+
+/* Combinador irmão em geral (~) */
+div ~ P {
+    color: aqua;
+}

@@ -1,0 +1,24 @@
+/* 
+    Combinadores: qual tipo de relação entre 2 seletores.
+    1. Combinador descendente (espaço)
+    2. Combinador filho (>)
+    3. Combinador irmão adjacente (+)
+    4. Combinador irmão em geral (~)
+
+    [SELETOR] [COMBINADOR] [SELETOR]
+*/
+.fundo-verde span p{
+    color: rgb(238, 144, 153);
+}
+.fundo-verde span > p{
+    background: lightgreen;
+}
+
+.fundo-verde span + p{
+    color: rgb(238, 144, 235);
+}
+
+.fundo-verde span ~ p{
+    background: rgb(144, 221, 238);
+}
+
