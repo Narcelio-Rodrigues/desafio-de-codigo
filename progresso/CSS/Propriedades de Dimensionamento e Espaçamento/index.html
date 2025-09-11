@@ -2,8 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formas de Declaração do CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">Propriedades do CSS</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <style>
         /* Propriedades básicas do CSS */
@@ -79,9 +78,43 @@
         }
 
         /* 
-        width = largura + borda + padding
+        - width = largura + borda + padding
+
+        /* 
+        Box-sizing
+        - Content-box (padrão)
+            * O valor default dos navegadores.
+            * A propriedade width e height se aplicam apenas ao conteúdo, não incluindo padding e border.
+            * Exemplo:
+                div {
+                    width: 200px;
+                    padding: 20px;
+                    border: 5px solid black;
+                    box-sizing: content-box;
+                }
+            👉 Largura total da caixa = 200 (conteúdo) + 40 (padding) + 10 (borda) = 250px
+
+        - border-box
+            * A largura/altura incluem conteúdo + padding + border.
+            * O navegador ajusta o content para que a soma não ultrapasse o valor definido.
+            * Exemplo:
+                div {
+                    width: 200px;
+                    padding: 20px;
+                    border: 5px solid black;
+                    box-sizing: border-box;
+                }
+            👉 Largura total da caixa = 200px fixos (o conteúdo diminui para caber junto com padding e border).
+                
+            O cálculo funciona assim:
+                largura total desejada: 200px fixos
+                border: 5px de cada lado → 10px
+                padding: 20px de cada lado → 40px
+                🔹 Sobra para o conteúdo:
+                200px – 40px (padding) – 10px (border) = 150px
+
+        # inherit - O elemento herda o valor do box-sizing do elemento pai.
         */
-        /* Para que ele respeite o que foi definido no 'Width' podemos usaar a propriedade: box-sizing*/
     </style>
 </head>
 <body>
