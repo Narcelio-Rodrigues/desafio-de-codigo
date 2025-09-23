@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimensionando as Imagens de Fundo dos Elementos</title>
+    <style>
+       div {
+        margin-bottom: 30px;
+       }
+
+       .exemplo {
+            width: 200px;
+            height: 200px;
+            background-image: url('./monta1.jpg');
+       }
+
+       /* Exemplos */
+       #cover {
+            background-size: contain;
+       }
+    </style>
+</head>
+<body>
+    <p><strong>background-size: auto;</strong></p>
+    <div class="exemplo" id="cover"></div><br>
+    
+    <p><strong>background-size: cover;</strong></p>
+    <div class="exemplo" id="contain"></div><br>
+
+    <p><strong>background-size: auto;</strong></p>
+    <div class="exemplo" id="tamanho"></div><br>
+</html>
