@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento das Imagens de Fundo</title>
+    <style>
+       div {
+        margin-bottom: 30px;
+       }
+
+       .exemplo {
+            width: 300px;
+            height: 300px;
+            background-image: url('./imagem11.jpg');
+            background-size: 120px;
+            border: 1px solid red;
+            background-repeat: no-repeat;
+       }
+
+       /* Exemplos */
+       #bottom {
+         background-position: bottom;
+       }
+
+       #right {
+         background-position: right;
+       }
+
+       #left {
+         background-position: left;
+       }
+
+       #top {
+         background-position: top;
+       }
+
+       #center {
+         background-position: center;
+       }
+
+       #valor {
+         background-position: 20px;
+       }
+
+       #DoisValores {
+         background-position: center 40px;
+       }
+
+       #cantos {
+         background-position: bottom 20px right 20px;
+       }
+    </style>
+</head>
+<body>
+    <code>background-position: bottom</code>
+    <div class="exemplo" id="bottom"></div><br>
+
+    <code>background-position: right</code>
+    <div class="exemplo" id="right"></div><br>
+
+    <code>background-position: left</code>
+    <div class="exemplo" id="left"></div><br>
+
+    <code>background-position: top</code>
+    <div class="exemplo" id="top"></div><br>
+
+    <code>background-position: center</code>
+    <div class="exemplo" id="center"></div><br>
+
+    <code>background-position: valor</code>
+    <div class="exemplo" id="valor"></div><br>
+
+    <code>background-position: valor-1 valor-2</code>
+    <div class="exemplo" id="DoisValores"></div><br>
+
+    <code>background-position: valor-1 canto valor-2 canto</code>
+    <div class="exemplo" id="cantos"></div><br>
+</html>
