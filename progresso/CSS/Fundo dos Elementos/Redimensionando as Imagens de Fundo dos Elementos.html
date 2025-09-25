@@ -10,24 +10,53 @@
        }
 
        .exemplo {
-            width: 200px;
-            height: 200px;
-            background-image: url('./monta1.jpg');
+            width: 300px;
+            height: 300px;
+            background-image: url('grendene-logo.png'), url('./imagem11.jpg');
        }
 
        /* Exemplos */
+       #auto {
+            background-size: auto;
+       }
+
        #cover {
+            background-size: cover;
+       }
+
+       #contain {
             background-size: contain;
+       }
+
+       #tamanho {
+            background-size: 200px;
+       }
+
+       #tamanho-x-y {
+            background-size: 100px 100%;
+       }
+
+       #exemplo-camadas {
+            background-size: 300px 200px, contain;
        }
     </style>
 </head>
 <body>
-    <p><strong>background-size: auto;</strong></p>
-    <div class="exemplo" id="cover"></div><br>
+    <code>background-size: auto;</code>
+    <div class="exemplo" id="auto"></div><br>
     
-    <p><strong>background-size: cover;</strong></p>
+    <code>background-size: cover;</code>
+    <div class="exemplo" id="cover"></div><br>
+
+    <code>background-size: contain;</code>
     <div class="exemplo" id="contain"></div><br>
 
-    <p><strong>background-size: auto;</strong></p>
+    <code>background-size: valor;</code>
     <div class="exemplo" id="tamanho"></div><br>
+
+    <code>background-size: valor-1 valor-2;</code>
+    <div class="exemplo" id="tamanho-x-y"></div><br>
+
+    <code>background-size: camada-1, camada-2</code>
+    <div class="exemplo" id="exemplo-camadas"></div><br>
 </html>
