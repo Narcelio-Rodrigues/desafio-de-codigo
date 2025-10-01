@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Background Clip</title>
+    <style>
+       div {
+         margin-bottom: 30px;
+       }
+
+       .exemplo {
+            width: 300px;
+            height: 300px;
+            border: 15px dashed palegreen;
+            color: white;
+            padding: 30px;
+            font-size: 40px;
+            font-weight: 900;
+            background-color: palevioletred;
+       }
+
+       /* Exemplos */
+        #padding-box {
+        background-clip: padding-box;
+       }
+
+       #border-box {
+        background-clip: border-box;
+       }
+
+       #content-box {
+        background-clip: content-box;
+       }
+
+       #text {
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+       } 
+
+    </style>
+</head>
+<body>
+    <code>background-clip: padding-box;</code>
+    <div class="exemplo" id="padding-box">TRILHA DE CSS</div><br>
+
+    <code>background-clip: border-box;</code>
+    <div class="exemplo" id="border-box">TRILHA DE CSS</div><br>
+
+    <code>background-clip: content-box;</code>
+    <div class="exemplo" id="content-box">TRILHA DE CSS</div><br>
+
+    <code>background-clip: content-box;</code>
+    <div class="exemplo" id="text">TRILHA DE CSS</div><br>
+</html>
