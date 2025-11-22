@@ -23,3 +23,12 @@ while (velocidade1 > 0) {
 }
 
 alert("O carro parou.")
+
+// 
+
+let dia = 1;
+
+while (dia <= 30) {
+    console.log("Dia" , dia);
+    dia++;
+}
