@@ -12,7 +12,6 @@ do {
         pacientes += (i + 1) + "º - " + fila[i] + "\n"
     }
 
-
     opcao = prompt(
         "Pacientes:\n" + pacientes +
         "\nEscolha uma ação:\n1. Novo paciente\n2. Consultar paciente\n3. Sair"        
